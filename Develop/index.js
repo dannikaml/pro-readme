@@ -1,7 +1,6 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const process = require('process');
 const path = require('path');
 const generateMarkdown = require('./utils/generateMarkdown');
 
@@ -59,21 +58,21 @@ const questions = [
 ];
 
 
+
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    return fs.createReadme(path.join(process.cwd(), fileName), data);
+  return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+}
 
-} 
 
-// Printing current directory
-console.log("Current working directory: ", process.cwd());
+
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.prompt(questions).then((inquirerResponses) => {
-        console.log('generate');
-        writeToFile('README.md', generateMarkdown({ ...inquirerResponses }));
-      });
+  inquirer.prompt(questions).then((inquirerResponses) => {
+    console.log('Generating README...');
+    writeToFile('README.md', generateMarkdown({ ...inquirerResponses }));
+  });
     
 }
 
