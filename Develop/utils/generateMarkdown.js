@@ -57,9 +57,9 @@ ${renderLicenseLink(data.license)}
  ### Installation
 
   Instructions for successful installation:
-
+  \`\`\`
   ${data.installation}
-
+  \`\`\`
 
  ### Usage
 
@@ -77,9 +77,9 @@ ${renderLicenseLink(data.license)}
    ### Tests
 
    Test by using the instructions below:
-
+   \`\`\`
    ${data.test}
-
+   \`\`\`
 
    ### Questions
 
