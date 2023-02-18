@@ -15,6 +15,7 @@ w3schools:
 
 stackoverflow:
 - https://stackoverflow.com/questions/39658611/nodejs-get-absolute-path-relative-to-process-cwd
+- https://stackoverflow.com/questions/67013842/trying-to-place-license-badge-within-readme-md-using-node-js-but-getting-error-a
 
 scaler:
 - https://www.scaler.com/topics/javascript/import-js-file-in-js/
