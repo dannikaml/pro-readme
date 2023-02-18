@@ -12,11 +12,14 @@ By utilizing Node.js we can create a command-line application that dynamically g
 
 In order to install inquirer, please use:
 
+```
 npm i inquirer@8.2.4
+```
 
 The application will be invoked by using the following command:
-
+```
 node index.js
+```
 
 ***
 ### User Story
