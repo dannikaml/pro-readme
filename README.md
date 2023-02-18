@@ -4,6 +4,7 @@
 
 YouTube:
 - https://www.youtube.com/watch?v=2VUQABoFOqw
+- https://www.youtube.com/watch?v=9YivEQFpmHQ&t=32s
 
 geeksforgeeks:
 - https://www.geeksforgeeks.org/node-js-process-cwd-method/

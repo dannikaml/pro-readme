@@ -15,7 +15,15 @@ const questions = [
   {
     type: 'input',
     name: 'description',
-    message: 'Write a description of your project: ',
+    message: 'Please write a short description of your project',
+  },
+
+  // list of licenses from github
+  {
+    type: 'list',
+    name: 'license',
+    message: 'What kind of license should your project have?',
+    choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'],
   },
   {
     type: 'input',
@@ -38,13 +46,6 @@ const questions = [
     message: 'What should users know about contributing to this repository?',
   },
   {
-     // list of licenses from github
-    type: 'list',
-    name: 'license',
-    message: 'Which license have you used?',
-    choices: ['The MIT License', 'GPL 3.0', 'APACHE 2.0', 'BSD 3', 'None'],
-  },
-  {
     type: 'input',
     name: 'github',
     message: 'What is your GitHub username?',
@@ -54,24 +55,23 @@ const questions = [
     name: 'email',
     message: 'What is your email address?',
   },
-  console.log('questions')
 ];
 
 
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+  return fs.writeFileSync(path.join(process.cwd(), fileName), data); 
+  
 }
-
 
 
 
 // TODO: Create a function to initialize app
 function init() {
-  inquirer.prompt(questions).then((inquirerResponses) => {
+  inquirer.prompt(questions).then((responses) => {
     console.log('Generating README...');
-    writeToFile('README.md', generateMarkdown({ ...inquirerResponses }));
+    writeToFile('README.md', generateMarkdown({ ...responses }));
   });
     
 }
