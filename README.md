@@ -68,7 +68,7 @@ THEN I am taken to the corresponding section of the README
 https://drive.google.com/file/d/1WoZ6waunGVsfK6YpPdDE3Iv5oE1Gq6CR/view
 
 
-![screenshot](./Develop/utils/screenshot.PNG)
+![screenshot](./Develop/screenshot.PNG)
 
 ***
 ### Sources
